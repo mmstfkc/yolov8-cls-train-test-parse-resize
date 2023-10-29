@@ -10,7 +10,7 @@ def resize_image(image_path, size=(1280, 1280)):
     image.save(image_path)
 
 
-def split_dataset(dataset_path, train_percentage, destination_path, image_size=(1280, 1280)):
+def split_dataset(dataset_path, train_percentage, destination_path, image_size=None):
     if train_percentage < 0 or train_percentage > 100:
         raise ValueError("Train percentage should be between 0 and 100.")
 
